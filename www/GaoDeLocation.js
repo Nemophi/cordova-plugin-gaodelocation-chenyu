@@ -1,28 +1,28 @@
 var exec = require('cordova/exec');
 
 var GaoDe = {
-    getCurrentPosition: (successFn, errorFn, option) => {
+    getCurrentPosition: function(successFn, errorFn, option) {
         exec(successFn, errorFn, 'GaoDeLocation', 'getCurrentPosition', [option]);
     },
-    startSerialLocation: (successFn, errorFn, option) => {
+    startSerialLocation: function(successFn, errorFn, option) {
         exec(successFn, errorFn, 'GaoDeLocation', 'startSerialLocation', [option]);
     },
-    stopSerialLocation: (successFn, errorFn) => {
+    stopSerialLocation: function(successFn, errorFn) {
         exec(successFn, errorFn, 'GaoDeLocation', 'stopSerialLocation', []);
     },
-    pathOptimize: (successFn, errorFn, option) => {
+    pathOptimize:function (successFn, errorFn, option) {
         exec(successFn, errorFn, 'GaoDeLocation', 'pathOptimize', [option]);
     },
-    kalmanFilterPath: (successFn, errorFn, option) => {
+    kalmanFilterPath:function (successFn, errorFn, option) {
         exec(successFn, errorFn, 'GaoDeLocation', 'kalmanFilterPath', [option]);
     },
-    removeNoisePoint: (successFn, errorFn, option) => {
+    removeNoisePoint:function (successFn, errorFn, option) {
         exec(successFn, errorFn, 'GaoDeLocation', 'removeNoisePoint', [option]);
     },
-    kalmanFilterPoint: (successFn, errorFn, option) => {
+    kalmanFilterPoint: function(successFn, errorFn, option) {
         exec(successFn, errorFn, 'GaoDeLocation', 'kalmanFilterPoint', [option]);
     },
-    reducerVerticalThreshold: (successFn, errorFn, option) => {
+    reducerVerticalThreshold: function(successFn, errorFn, option) {
         exec(successFn, errorFn, 'GaoDeLocation', 'reducerVerticalThreshold', [option]);
     }
 };
