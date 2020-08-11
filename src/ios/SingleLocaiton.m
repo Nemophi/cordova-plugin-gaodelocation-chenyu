@@ -35,7 +35,7 @@
     [self.locationManager setPausesLocationUpdatesAutomatically:NO];
 
     //设置允许在后台定位
-    [self.locationManager setAllowsBackgroundLocationUpdates:YES];
+    [self.locationManager setAllowsBackgroundLocationUpdates:NO];
 
     //设置定位超时时间
     [self.locationManager setLocationTimeout:DefaultLocationTimeout];
